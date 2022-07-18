@@ -1,0 +1,174 @@
+html {
+    font-size: 10pt;
+    box-sizing: border-box;
+}
+
+.provider-account-info {
+    border-collapse: collapse;
+    border: 1px solid black;
+    width: 100%;
+    font-size: 10pt;
+    margin-bottom: 1cm;
+}
+
+tr,td   {
+    border: 1px solid black;
+}
+
+.hidden {
+    border: none;
+}
+
+.wrap {
+    max-width: 16cm;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 1cm;
+}
+
+.account-provider {
+    width: 2.5cm;
+}
+
+.number-inn, .number-kpp {
+    width: 3cm;
+}
+
+.inn-kpp {
+    width: 1cm;
+}
+
+.textrow-top {
+    vertical-align:top;
+}
+
+.textrow-bottom {
+    vertical-align:bottom;
+}
+
+.secondcol {
+    height: 1cm;
+}
+
+.name-recipient {
+    width: 7cm;
+}
+
+.account {
+    font-size: 20pt;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    padding-bottom: 15px;
+    margin-bottom: 0.5cm;
+}
+
+.day {
+    display: inline-block;
+    width: 35px;
+    text-align: center;
+    text-decoration:underline ;
+}
+
+.month {
+    display: inline-block;
+    width: fit-content;
+    text-decoration:underline ;
+    text-align: center;
+}
+
+.year {
+    display: inline-block;
+    width: fit-content;
+    text-decoration:underline ;
+}
+
+.provider-info, .client-info {
+    display: inline;
+    font-weight: bold;
+    width: 80%;
+    margin-left: 20px;
+}
+
+.wrap-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    margin-bottom: 20px;
+}
+
+.goods {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 10pt;
+    margin-bottom: 30px;
+}
+
+.goods thead, .goods tbody, .goods th {
+    border: 2px solid black;
+}
+
+tfoot tr {
+    border: none;
+}
+
+.goods tfoot {
+    text-align: right;
+    font-weight: bold;
+}
+.goods tbody tr td:nth-child(3), .goods tbody tr td:nth-child(4){
+    text-align: center;
+}
+
+.goods tbody tr td:nth-child(5), .goods tbody tr td:nth-child(6) {
+    text-align: right;
+}
+
+.goods-item {
+    counter-reset: item;
+}
+
+.count {
+    counter-increment: item;
+}
+
+.goods tbody tr span::before {
+    content: counter(item);
+}
+
+.goods tbody tr span {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.goods tfoot .hidden {
+    padding-right: 10px;
+}
+
+.summ-text {
+    display: block;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    margin-bottom: 30px; 
+}
+
+.wrap-accept, .accept-1, .accept-2 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.accept-1 span:nth-child(2), .accept-2 span:nth-child(2) {
+    border-bottom: 1px solid #000;
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+}
+
+.accept-1, .accept-2 {
+    padding: 0 10px;
+}
+
+.text-bold {
+    font-weight: bold;
+}
